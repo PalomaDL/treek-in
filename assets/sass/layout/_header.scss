@@ -1,0 +1,10 @@
+.hero-section {
+    margin-top: 10vh;
+    &__img {
+        background-image: url(../img/bg-hero.svg);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}
