@@ -1,0 +1,14 @@
+.cards__btn {
+  background-color: $ball-blue;
+  width: 100%;
+  border: none;
+  color: white;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $txt-size-md;
+  font-family: $typo-titles;
+  font-weight: $txt-weight-bold;
+}

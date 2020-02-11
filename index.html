@@ -4,40 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CDN Luxbar -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Treek-in</title>
 </head>
 
 <body>
-    <nav id="luxbar" class="luxbar-static">
-        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
-        <div class="luxbar-menu luxbar-menu-left luxbar-menu-light">
-            <ul class="luxbar-navigation">
-                <li class="luxbar-header">
-                    <a href="#" class="luxbar-brand">LUXBAR</a>
-                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger"
-                        for="luxbar-checkbox"> <span></span> </label>
-                </li>
-                <li class="luxbar-item"><a href="#">Acerca de</a></li>
-
-                <li class="luxbar-item"><a href="#">Características</a></li>
-
-                <li class="luxbar-item"><a href="#">Precios</a></li>
-
-                <li class="luxbar-item"><a href="#">Iniciar sesión</a></li>
-
-                <li class="luxbar-item"><a href="#">Regístrate</a></li>
-            </ul>
+    <!-- NAVBAR (revisar) -->
+    <nav class="topnav" id="myTopnav">
+        <div>
+            <a href="#" class="topnav__brand"><img src="assets/img/logo.svg" alt="logo"></a>
+            <a href="#">Acerca de</a>
+            <a href="#">Características</a>
+            <a href="#">Precios</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div>
+            <button>Iniciar sesión</button>
+            <button>Regístrate</button>
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <header class="hero-section">
-        <!-- <h1>Haz Trekking sin parar</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus placeat vero ad necessitatibus possimus
-            repellat incidunt nemo saepe provident. Molestias repellat odit delectus officiis iusto neque aspernatur
-            dolore accusantium?</p> -->
         <div class="hero-section__txt">
             <h1>Haz Trekking sin parar</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus placeat vero ad necessitatibus
@@ -47,11 +38,16 @@
         </div>
     </header>
 
+    <!-- MAIN SECTION -->
     <main class="main-section">
+        <!-- FEATURES -->
         <section class="row main-section__features">
             <h2>Características</h2>
-            <div class="col-12"><img src="assets/img/bar-graph.svg" alt="gráfico"></div>
-            <div class="col-12">
+            <div class="col-12 col-md-6 animation-element slide-left">
+                <!-- Img animada -->
+                <img src="assets/img/bar-graph.svg" alt="gráfico">
+            </div>
+            <div class="col-12 col-md-6">
                 <h3>Estadísticas de tu progreso</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptate enim facilis officiis, ullam
                     quaerat recusandae commodi quasi qui totam libero molestias ad a. Temporibus quod quos distinctio
@@ -59,32 +55,62 @@
             </div>
         </section>
 
+        <!-- CARDS -->
         <section class="row main-section__cards">
             <div class="col-12">
                 <h2>Precios</h2>
             </div>
-            <div class="col-12 card">CARD 1
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quibusdam, earum aut aliquid ut molestias exercitationem error laboriosam quaerat veniam repudiandae odit sit dolore ab, ratione necessitatibus voluptates, ad eos.</p>
-                <hr>
-                <button>aaaa</button>
+            <div class="col-12 col-md-6 card animation-element slide-left">
+                <div class="card-top">
+                    <p class="card__title">Trekk-in Free</p>
+                    <p class="reset card__price">$ 0 / mes</p>
+                    <hr class="reset">
+                    <ul class="card__list">
+                        <li>Ver mapas creados por usuarios.</li>
+                        <li>Concertar con otros usuarios.</li>
+                    </ul>
+                </div>
+                <div class="card__bottom">
+                    <hr class="reset">
+                    <button class="cards__btn">Obtén Free</button>
+                </div>
             </div>
-            <div class="col-12 card">CARD 2
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quibusdam, earum aut aliquid ut molestias exercitationem error laboriosam quaerat veniam repudiandae odit sit dolore ab, ratione necessitatibus voluptates, ad eos.</p>
-                <hr>
-                <button>aaaa</button>
+            <div class="col-12 col-md-6 card animation-element slide-left">
+                <div class="card-top">
+                    <p class="card__title">Trekk-in Premium</p>
+                    <p class="reset card__price">$ 3500 / mes</p>
+                    <hr class="reset">
+                    <ul class="card__list">
+                        <li>Ver mapas creados por usuarios.</li>
+                        <li>Concertar con otros usuarios.</li>
+                        <li>Definir mejores rutas.</li>
+                        <li>Mapas offline.</li>
+                        <li>Integración con otras aplicaciones.</li>
+                    </ul>
+                </div>
+                <div class="card__bottom">
+                    <hr class="reset">
+                    <button class="cards__btn">Obtén Premium</button>
+                </div>
             </div>
         </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
-        <ul class="">
-            <li class=""><a href="#">Legal</a></li>
-            <li class=""><a href="#">Cookies</a></li>
-            <li class=""><a href="#">Sobre anuncios </a></li>
-        </ul>
-        <p>(C) 2018 Trekk-in SPA.</p>
+        <div class="reset footer__links">
+            <a href="#">Legal</a>
+            <a href="#">Cookies</a>
+            <a href="#">Sobre anuncios</a>
+        </div>
+        <p>© 2018 Trekk-in SPA.</p>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/animate.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

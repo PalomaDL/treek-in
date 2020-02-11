@@ -6,14 +6,30 @@
 }
 
 .main-section__cards {
-  padding-top: 40vh;
   background-image: url(../img/bg-price.svg);
-  background-size: cover;
+  //SVG modificado para ignorar aspect ratio
+  background-size: 180% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 40vh 2rem 2rem 2rem;
   h2 {
     margin-left: auto;
     margin-right: auto;
     color: $white;
+    text-align: center;
   }
+}
+
+//ANIMATION
+.animation-element {
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(0px, 10px, 0px);
+  transition-delay: 1;
+  position: relative;
+}
+
+.animation-element.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
 }
