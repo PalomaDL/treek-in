@@ -8,6 +8,18 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
 }
 
 .luxbar-menu-light {
@@ -314,14 +326,52 @@ body {
   }
 }
 .hero-section {
-  margin-top: 10vh;
-}
-.hero-section__img {
   background-image: url(../img/bg-hero.svg);
-  background-position: right;
-  background-size: cover;
+  background-position: right bottom;
+  background-size: 200%;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
+  margin-top: 15vh;
+  display: flex;
+}
+.hero-section__txt {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+}
+
+.main-section__features {
+  padding: 2rem;
+}
+.main-section__features h2 {
+  grid-column-start: 6;
+}
+
+.main-section__cards {
+  padding-top: 40vh;
+  background-image: url(../img/bg-price.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-section__cards h2 {
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.footer {
+  background-color: #221d23;
+}
+
+.card {
+  height: 75vh;
+  width: 83vw;
+  background-color: #fff;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

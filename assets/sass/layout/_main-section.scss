@@ -1,0 +1,19 @@
+.main-section__features {
+  padding: 2rem;
+  h2 {
+    grid-column-start: 6;
+  }
+}
+
+.main-section__cards {
+  padding-top: 40vh;
+  background-image: url(../img/bg-price.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: $white;
+  }
+}
