@@ -1,1 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap");
+
+@media (min-width: 665px) {
+  h1 {
+    font-size: $txt-size-xxxxxl;
+  }
+
+  h2 {
+    font-size: $txt-size-xxxl;
+  }
+
+  h3 {
+    font-size: $txt-size-xxl;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+}

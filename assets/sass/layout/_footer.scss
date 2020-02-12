@@ -2,7 +2,9 @@
   background-color: $raisin-black;
   text-align: center;
   padding:1rem 0 1rem 0;
-  color: $lavender-gray;
+  p {
+    color: $lavender-gray;
+  }
   &__links {
     display: flex;
     justify-content: space-around;

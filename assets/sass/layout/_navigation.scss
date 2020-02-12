@@ -9,13 +9,14 @@
   background-color: $white;
   overflow: hidden;
   padding: 1rem;
+  font-family: $typo-titles;
 }
 .topnav__btns {
   float: right;
   display: none;
 }
 
-@media (min-width: 665px) {
+@media (min-width: 666px) {
   .topnav__btns {
     display: block;
   }

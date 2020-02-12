@@ -1,7 +1,7 @@
 .hero-section {
   background-image: url(../img/bg-hero.svg);
   background-position: right bottom;
-  background-size: 200%;
+  background-size: 150%;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
@@ -15,12 +15,16 @@
 }
 
 @media (min-width: 665px) {
-  .hero-section{
-    background-position: right top;
-    background-size: cover;
+  .hero-section {
+    background-position: right center;
+    background-size: 100%;
+    height: 150vh;
     &__txt {
-    width: 25vw;
-    left: 10vw;
+      width: 30vw;
+      left: 10vw;
+      p {
+        line-height: 1.8;
+      }
     }
   }
 }
