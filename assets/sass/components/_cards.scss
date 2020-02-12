@@ -1,7 +1,7 @@
 .card {
   box-sizing: border-box;
   height: 85vh;
-  width: 80vw;
+  width: 100%;
   background-color: $white;
   padding: 1rem 2rem;
   margin-bottom: 2rem;
@@ -36,6 +36,13 @@
       position: absolute;
       left: -2em;
     }
+  }
+}
+@media (min-width: 665px) {
+  .card {
+    width: 25vw;
+    height: 75vh;
+    margin: 0 auto
   }
 }
 

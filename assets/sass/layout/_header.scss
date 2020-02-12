@@ -13,3 +13,14 @@
     right: 2rem;
   }
 }
+
+@media (min-width: 665px) {
+  .hero-section{
+    background-position: right top;
+    background-size: cover;
+    &__txt {
+    width: 25vw;
+    left: 10vw;
+    }
+  }
+}

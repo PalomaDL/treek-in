@@ -10,21 +10,19 @@
 </head>
 
 <body>
-    <!-- NAVBAR (revisar) -->
+    <!-- NAVBAR -->
     <nav class="topnav" id="myTopnav">
-        <div>
-            <a href="#" class="topnav__brand"><img src="assets/img/logo.svg" alt="logo"></a>
-            <a href="#">Acerca de</a>
-            <a href="#">Características</a>
-            <a href="#">Precios</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <a href="#" class="topnav__brand"><img src="assets/img/logo.svg" alt="logo"></a>
+        <a href="#">Acerca de</a>
+        <a href="#">Características</a>
+        <a href="#">Precios</a>
+        <div class="topnav__btns">
+            <a href="#">Inicia sesión</a>
+            <a href="#" class="active">Regístrate</a>
         </div>
-        <div>
-            <button>Iniciar sesión</button>
-            <button>Regístrate</button>
-        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
     </nav>
 
     <!-- HERO SECTION -->
@@ -42,7 +40,9 @@
     <main class="main-section">
         <!-- FEATURES -->
         <section class="row main-section__features">
-            <h2>Características</h2>
+            <div class="col-12">
+             <h2>Características</h2>   
+            </div>
             <div class="col-12 col-md-6 animation-element slide-left">
                 <!-- Img animada -->
                 <img src="assets/img/bar-graph.svg" alt="gráfico">
