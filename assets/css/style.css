@@ -541,6 +541,12 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
+.cards__btn:hover {
+  background-color: #77d1dd;
+}
+.cards__btn:focus {
+  background-color: #bababa;
+}
 
 .card {
   box-sizing: border-box;

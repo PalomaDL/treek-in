@@ -11,4 +11,10 @@
   font-size: $txt-size-md;
   font-family: $typo-titles;
   font-weight: $txt-weight-bold;
+  &:hover {
+    background-color: $middle-blue;
+  }
+  &:focus{
+    background-color: $gray;
+  }
 }
